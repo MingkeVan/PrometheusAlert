@@ -29,7 +29,7 @@ docker_cleanup() {
 }
 
 if [[ "$#" -ne 2 ]] ; then
-    echo "Usage: $0 feiyu563/prometheus-alert 8080" >&2
+    echo "Usage: $0 mingkevan/prometheus-alert 8080" >&2
     exit 1
 fi
 
