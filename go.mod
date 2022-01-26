@@ -3,7 +3,7 @@ module PrometheusAlert
 go 1.15
 
 require (
-	github.com/MingkeVan/workwxbot v1.2.0
+	github.com/MingkeVan/workwxbot v1.2.1
 	github.com/aliyun/alibaba-cloud-sdk-go v1.61.641
 	github.com/astaxie/beego v1.12.1
 	github.com/baidubce/bce-sdk-go v0.9.32

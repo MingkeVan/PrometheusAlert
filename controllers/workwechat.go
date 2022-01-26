@@ -5,9 +5,9 @@ package controllers
 
 import (
 	"PrometheusAlert/model"
+	"github.com/MingkeVan/workwxbot"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
-	"github.com/MingkeVan/workwxbot"
 )
 
 // SendWorkWechat 发送微信企业应用消息
@@ -27,7 +27,7 @@ func SendWorkWechat(touser, toparty, totag, msg, logsign string) string {
 	//totag := beego.AppConfig.String("WorkWechat_ToTag")
 
 	workwxapi := workwxbot.Client{
-		qywxUrl:     qywxUrl,
+		QywxUrl:     qywxUrl,
 		CropID:      cropid,
 		AgentID:     agentid,
 		AgentSecret: agentsecret,

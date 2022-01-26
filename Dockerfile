@@ -1,6 +1,6 @@
 FROM golang:1.16-alpine3.12 as builder
 
-WORKDIR $GOPATH/src/github.com/mingkevan/PrometheusAlert
+WORKDIR $GOPATH/src/github.com/MingkeVan/PrometheusAlert
 
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && \
     apk update && apk upgrade && \
@@ -10,7 +10,7 @@ ENV GO111MODULE on
 
 ENV GOPROXY https://goproxy.io
 
-COPY . $GOPATH/src/github.com/mingkevan/PrometheusAlert
+COPY . $GOPATH/src/github.com/MingkeVan/PrometheusAlert
 
 RUN make build
 
@@ -31,7 +31,7 @@ HEALTHCHECK --start-period=10s --interval=20s --timeout=3s --retries=3 \
 
 WORKDIR /app
 
-COPY --from=builder /go/src/github.com/mingkevan/PrometheusAlert/PrometheusAlert .
+COPY --from=builder /go/src/github.com/MingkeVan/PrometheusAlert/PrometheusAlert .
 
 COPY db/PrometheusAlertDB.db /opt/PrometheusAlertDB.db
 

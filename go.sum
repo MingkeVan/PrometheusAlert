@@ -3,8 +3,8 @@ cloud.google.com/go v0.34.0/go.mod h1:aQUYkXzVsufM+DwF1aE+0xfcU+56JwCaLick0ClmMT
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/Knetic/govaluate v3.0.0+incompatible/go.mod h1:r7JcOSlj0wfOMncg0iLm8Leh48TZaKVeNIfJntJ2wa0=
 github.com/Knetic/govaluate v3.0.1-0.20171022003610-9aa49832a739+incompatible/go.mod h1:r7JcOSlj0wfOMncg0iLm8Leh48TZaKVeNIfJntJ2wa0=
-github.com/MingkeVan/workwxbot v1.2.0 h1:UmpXMzfYHS3zlIDDsUdjB4xGqg0jHBTAq9Bgd2U/dVg=
-github.com/MingkeVan/workwxbot v1.2.0/go.mod h1:7oYFmALbPLXiRqqIKhvy6VS6RCTAXkP8cwDjDINZfcs=
+github.com/MingkeVan/workwxbot v1.2.1 h1:klT/OY2yL3Nqm+HweLaLK27snVcxEOL+LKOHyrGVyT4=
+github.com/MingkeVan/workwxbot v1.2.1/go.mod h1:7oYFmALbPLXiRqqIKhvy6VS6RCTAXkP8cwDjDINZfcs=
 github.com/OwnLocal/goes v1.0.0/go.mod h1:8rIFjBGTue3lCU0wplczcUgt9Gxgrkkrw7etMIcn8TM=
 github.com/Shopify/sarama v1.19.0/go.mod h1:FVkBWblsNy7DGZRfXLU0O9RCGt5g3g3yEuWXgklEdEo=
 github.com/Shopify/toxiproxy v2.1.4+incompatible/go.mod h1:OXgGpZ6Cli1/URJOF1DMxUHB2q5Ap20/P/eIdh4G0pI=
