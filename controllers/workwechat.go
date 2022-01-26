@@ -7,7 +7,7 @@ import (
 	"PrometheusAlert/model"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
-	"github.com/ysicing/workwxbot"
+	"github.com/MingkeVan/workwxbot"
 )
 
 // SendWorkWechat 发送微信企业应用消息
@@ -17,6 +17,7 @@ func SendWorkWechat(touser, toparty, totag, msg, logsign string) string {
 		logs.Info(logsign, "[workwechat]", "workwechat未配置未开启状态,请先配置open-workwechat为1")
 		return "workwechat未配置未开启状态,请先配置open-workwechat为1"
 	}
+	qywxUrl := beego.AppConfig.String("WorkWechat_url")
 	cropid := beego.AppConfig.String("WorkWechat_CropID")
 	agentid, _ := beego.AppConfig.Int64("WorkWechat_AgentID")
 	agentsecret := beego.AppConfig.String("WorkWechat_AgentSecret")
@@ -26,6 +27,7 @@ func SendWorkWechat(touser, toparty, totag, msg, logsign string) string {
 	//totag := beego.AppConfig.String("WorkWechat_ToTag")
 
 	workwxapi := workwxbot.Client{
+		qywxUrl:     qywxUrl,
 		CropID:      cropid,
 		AgentID:     agentid,
 		AgentSecret: agentsecret,

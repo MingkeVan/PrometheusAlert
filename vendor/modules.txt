@@ -1,3 +1,6 @@
+# github.com/MingkeVan/workwxbot v1.2.0
+## explicit
+github.com/MingkeVan/workwxbot
 # github.com/aliyun/alibaba-cloud-sdk-go v1.61.641
 ## explicit
 github.com/aliyun/alibaba-cloud-sdk-go/sdk
@@ -118,9 +121,6 @@ github.com/smartystreets/goconvey/convey/gotest
 github.com/smartystreets/goconvey/convey/reporting
 # github.com/technoweenie/multipartstreamer v1.0.1
 github.com/technoweenie/multipartstreamer
-# github.com/ysicing/workwxbot v1.0.1
-## explicit
-github.com/ysicing/workwxbot
 # golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9
 golang.org/x/crypto/acme
 golang.org/x/crypto/acme/autocert

@@ -3,6 +3,7 @@ module PrometheusAlert
 go 1.15
 
 require (
+	github.com/MingkeVan/workwxbot v1.2.0
 	github.com/aliyun/alibaba-cloud-sdk-go v1.61.641
 	github.com/astaxie/beego v1.12.1
 	github.com/baidubce/bce-sdk-go v0.9.32
@@ -15,7 +16,6 @@ require (
 	github.com/prometheus/client_golang v1.8.0
 	github.com/shiena/ansicolor v0.0.0-20151119151921-a422bbe96644 // indirect
 	github.com/smartystreets/goconvey v1.6.4
-	github.com/ysicing/workwxbot v1.0.1
 	gopkg.in/alexcesaro/quotedprintable.v3 v3.0.0-20150716171945-2caba252f4dc // indirect
 	gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df // indirect
 )
